@@ -1,0 +1,124 @@
+body {
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#eff3ff;
+  color:#22304b;
+}
+nav {
+  background:#233867;
+  display:flex;
+  justify-content:center;
+  gap:36px;
+  padding:22px 0;
+}
+nav a {
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:1.1rem;
+  transition:color .3s;
+  letter-spacing:.5px;
+}
+nav a:hover {
+  color:#7efae5;
+}
+.hero {
+  background:linear-gradient(105deg, #7af0fc 50%, #ffffff 100%);
+  padding:64px 0 56px;
+  text-align:center;
+}
+.hero h1 {
+  font-size:2.8rem;
+  letter-spacing:1.5px;
+}
+.hero p {
+  margin:18px auto 0;
+  max-width:540px;
+  font-size:1.16rem;
+  color:#3c477a;
+}
+.section {
+  padding:50px 7vw;
+  max-width:1160px;
+  margin:auto;
+}
+.cards {
+  display:flex;
+  gap:28px;
+  justify-content:center;
+  margin-top:24px;
+  flex-wrap:wrap;
+}
+.card {
+  background:#fff;
+  border-radius:20px;
+  box-shadow:0 16px 32px #22304b16, 0 1.5px 5px #22304b23;
+  flex:1 0 230px;
+  min-width:230px;
+  max-width:320px;
+  padding:36px 30px 28px;
+  transition:transform .24s, box-shadow .32s;
+}
+.card:hover {
+  transform:translateY(-10px) scale(1.025);
+  box-shadow:0 24px 42px #23386730;
+}
+h2 {
+  letter-spacing:1px;
+  margin:0 0 16px 0;
+}
+.button {
+  background:#20356f;
+  color:#fff;
+  border:none;
+  outline:none;
+  padding:9px 32px;
+  border-radius:17px;
+  font-size:1rem;
+  margin-top:18px;
+  cursor:pointer;
+  transition:background .26s;
+}
+.button:hover {
+  background:#27c9bb;
+}
+.blog-placeholder {
+  color:#6274a0;
+  font-style:italic;
+  text-align:center;
+  font-size:1.18rem;
+  margin-top:38px;
+}
+.contact-form {
+  display:flex;
+  flex-direction:column;
+  max-width:420px;
+  margin:32px auto;
+  gap:19px;
+}
+input, textarea {
+  font-size:1rem;
+  padding:11px 14px;
+  border-radius:10px;
+  border:1.6px solid #406aae;
+  transition:border .2s;
+  background:#f7fbff;
+}
+input:focus, textarea:focus {
+  border:#27c9bb 2.2px solid;
+  background:#fff;
+}
+textarea {resize:vertical;min-height:65px;}
+footer {
+  background:#233867;
+  color:#fff;
+  text-align:center;
+  padding:21px 0;
+  margin-top:38px;
+  font-size:1rem;
+  letter-spacing:1px;
+}
+@media(max-width:800px) {
+  .cards{flex-direction:column;gap:19px;}
+  .section{padding:37px 3vw;}
+}
